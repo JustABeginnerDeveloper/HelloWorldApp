@@ -21,29 +21,36 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-cG-dkC">
-                                <rect key="frame" x="82" y="704.5" width="250" height="53.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCd-IO-rFy">
+                                <rect key="frame" x="82" y="703" width="250" height="47"/>
                                 <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lKf-uN-Iej"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="JBM-pn-fVy"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Text">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="33"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTextPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="PST-3q-BS7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.54642988449999996" green="0.77309519969999996" blue="0.63751449859999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OdI-cG-dkC" secondAttribute="bottom" constant="104" id="UPm-yV-yfO"/>
-                            <constraint firstItem="OdI-cG-dkC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jAU-3U-WAb"/>
+                            <constraint firstItem="XCd-IO-rFy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TmK-CZ-DYk"/>
                             <constraint firstItem="q6b-XD-trD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="kkI-cD-nUl"/>
                             <constraint firstItem="q6b-XD-trD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="mFO-gW-bsk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XCd-IO-rFy" secondAttribute="bottom" constant="112" id="oSc-G2-CYM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q6b-XD-trD" secondAttribute="trailing" constant="38" id="z5N-v1-31r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="q6b-XD-trD" id="0nF-yf-3fb"/>
+                        <outlet property="showTextButton" destination="XCd-IO-rFy" id="dWZ-gZ-Hac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
